@@ -28,7 +28,7 @@ namespace los_api.Controllers
                         join product in _context.Product on stock.productId equals product.id
                         where product.id == id
                         select new {
-                            id = product.id,
+                            productId = product.id,
                             name = product.name,
                             imageUrl = product.imageUrl,
                             price = product.price,
