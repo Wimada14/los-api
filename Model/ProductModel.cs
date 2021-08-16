@@ -7,9 +7,9 @@ namespace los_api.Model
 {
     public class ProductModel
     {
-        public String id { get; set; }
+        public int id { get; set; }
         public String name { get; set; }
         public String imageUrl { get; set; }
-        public String price { get; set; }
+        public int price { get; set; }
     }
 }

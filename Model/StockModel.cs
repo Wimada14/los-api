@@ -7,8 +7,9 @@ namespace los_api.Model
 {
     public class StockModel
     {
-        public String id { get; set; }
-        public String productId { get; set; }
+        public int id { get; set; }
+        public int productId { get; set; }
         public int amount { get; set; }
+
     }
 }
