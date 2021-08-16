@@ -21,12 +21,13 @@ namespace los_api.Controllers
             _context = context;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [Route("GetStock")]
+        [HttpGet]
+        public async Task<IActionResult> GetStock(int productId)
         {
             var query = from stock in _context.Stock
                         join product in _context.Product on stock.productId equals product.id
-                        where product.id == id
+                        where product.id == productId
                         select new {
                             productId = product.id,
                             name = product.name,
