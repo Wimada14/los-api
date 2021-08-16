@@ -1,5 +1,6 @@
 # los-api
 There are 5 products.
+
 productId 1-5
 
 URL API	: https://localhost:44354/api/stock/GetStock?productId=1
